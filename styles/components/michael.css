@@ -1,0 +1,132 @@
+.michael {
+    /* border:1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; ;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.michael__img{
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+}
+
+.michael__words{
+    text-align: center;
+}
+
+.michael__subtitle{
+    font-size: var(--size-lg);
+}
+
+.michael__title{
+    font-size: 1.96rem;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+    margin-top: 1rem;
+}
+
+.michael__description{
+    font-size: var(--size-lg);
+    margin-top: 1rem;
+}
+
+.michael__btn{
+    text-transform: uppercase;
+    margin-top: 1rem;
+    transition: transform 0.3s;
+}
+
+.michael__btn:hover{
+    transform: translateY(-0.4rem);
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+    .michael{
+        flex-direction: row-reverse;
+        justify-content: left;
+        text-align: left;
+    }
+
+    .michael__img{
+        width: 12rem;
+        height: 12rem;
+    }
+    
+    .michael__words{
+        text-align: left;
+    }
+    
+    .michael__subtitle{
+        font-size: var(--size-xl);
+    }
+    
+    .michael__description{
+        font-size: var(--size-xl);
+    }
+    
+    .michael__btn{
+        font-size: var(--size-lg);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .michael__img{
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .michael__title{
+        font-size: var(--size-4xl);
+    }
+
+    .michael__subtitle{
+        font-size: var(--size-2xl);
+    }
+    
+    .michael__description{
+        font-size: var(--size-2xl);
+    }
+    
+    .michael__btn{
+        font-size: var(--size-xl);
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .michael__img{
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .michael__title{
+        font-size: var(--size-5xl);
+    }
+
+    .michael__subtitle{
+        font-size: var(--size-3xl);
+    }
+    
+    .michael__description{
+        font-size: var(--size-3xl);
+    }
+    
+    .michael__btn{
+        font-size: var(--size-2xl);
+    }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
+

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="profile_pic.jpeg"/>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phan Duy Anh</title>
+  </head>
+  <body>
+    <script type="module" src="./src/main.js"></script>
+    <header class="header container">
+      <nav class="header__nav">
+        <h1 class="header__logo">MPDA</h1>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#work">Projects</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <a
+              class="header__resume btn"
+              href="https://drive.google.com/file/d/1VFWLSrXeO7QMpN7AsBjYUZ8gyyIUdnJr/view?usp=share_link"
+              >Resume</a
+            >
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- ----mobile navigation---- -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- ----end mobile navigation ---- -->
+
+    <main>
+      <!-- ----introduction section---- -->
+      <section class="michael container">
+        <img
+          class="michael__img"
+          src="/profile_pic.jpeg"
+          alt="Profile picture"
+        />
+        <div class="michael__words">
+          <h2 class="michael__subtitle">Hi, I'm <strong>Michael</strong></h2>
+          <h1 class="michael__title">computer science student.</h1>
+          <p class="michael__description">
+            A <strong>Motivated</strong> and <strong>Eager</strong> student with
+            a strong work ethic.
+            <br />
+            Passionate about
+            <strong>Software Engineering, Web Design,</strong> and
+            <strong>Artificial Intelligence</strong>.
+          </p>
+          <a class="michael__btn btn" href="#">Contact</a>
+        </div>
+      </section>
+
+      <!-- ----about section---- -->
+      <section id="about" class="about section container">
+        <div class="about__img">
+          <img class="about__img lazy loading" src="michael.jpg" />
+        </div>
+        <div class="about__words">
+          <h2 class="about__title"><strong>About</strong></h2>
+          <p class="about__description">
+            Hi there, <br />
+            <br />
+            I am a <strong>Computer Science</strong> student at
+            <strong>University of Utah</strong> with a relentless passion for
+            technology and a diligent work ethic. My expertise lies in the
+            fields of <strong>Web</strong> and
+            <strong>Software Development</strong>.<br />
+            <br />
+            I also love reading novels and self-help books as well as being a
+            gymrat
+          </p>
+          <hr />
+          <div class="tab__titles">
+            <p class="tab__links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab__links" onclick="opentab('education')">Education</p>
+            <p class="tab__links" onclick="opentab('experience')">Experience</p>
+          </div>
+          <div class="tab__contents active-tab" id="skills">
+            <p><strong>UI/UX</strong><br />Designing Web/App interfaces</p>
+            <p><strong>Web Development</strong><br />Web App Development</p>
+            <p>
+              <strong>Software Development</strong><br />IOS/Android Apps
+              Development
+            </p>
+          </div>
+          <div class="tab__contents" id="education">
+            <p><strong>2022 - Present</strong><br />University of Utah</p>
+            <p>
+              <strong>2015 - 2022</strong><br />Vietnam Australia International
+              School
+            </p>
+          </div>
+          <div class="tab__contents" id="experience">
+            <p><strong>N/A</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----work section---- -->
+      <section id="work" class="work section container">
+        <h2 class="work__title"><strong>Projects</strong></h2>
+        <div class="work__list">
+          <div class="work__portfolio">
+            <div class="work__content">
+              <img src="cafe-the-town-2.jpg" alt="cafe-website" />
+              <div class="work__layer">
+                <h3>Cafe The Town Website</h3>
+                <p>
+                  The front-end design of a website for my local coffee shop
+                  that I go to since I started high school.
+                </p>
+              </div>
+            </div>
+            <div class="work__content">
+              <img src="rock-paper-scissor.jpg" alt="rock-paper-scissor" />
+              <div class="work__layer">
+                <h3>Rock Paper Scissor Game</h3>
+                <p>
+                  A fun game made using Python random module to randomly
+                  generate Rock, Paper or Scissor
+                </p>
+              </div>
+            </div>
+          </div>
+          <a class="work__btn btn" href="https://github.com/mpduyanh"
+            >Discover More</a
+          >
+        </div>
+      </section>
+
+      <!-- ----contact section---- -->
+      <section id="contact" class="contact section container">
+        <h2 class="contact__title"><strong>Contact Me</strong></h2>
+        <p class="contact__description">
+          For business inquiries or just want to chat, below are my socials so
+          feel free to reach out and I will get back to you as soon as possible.
+        </p>
+        <div class="contact__socials">
+          <a class="contact__links" href="https://www.instagram.com/mpduyanh/">
+            <img src="instagram.svg" />
+          </a>
+
+          <a
+            class="contact__links"
+            href="https://www.linkedin.com/in/mpduyanh/"
+          >
+            <img src="linkedin.svg" />
+          </a>
+
+          <a class="contact__links" href="mailto:mpduyanh@gmail.com">
+            <img src="gmail.svg" />
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section container">
+      <h3 class="footer__title">--Phan Duy Anh Mai--</h3>
+    </footer>
+    <script>
+      var tablinks = document.getElementsByClassName("tab__links");
+      var tabcontents = document.getElementsByClassName("tab__contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
