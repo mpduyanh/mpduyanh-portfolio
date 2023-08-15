@@ -1,6 +1,6 @@
 :root {
     --clr-slate950:#070a13;
-    --clr-red:#dc2626;
+    --clr-red:#b91c1c;
     --clr-gray500:#64748b;
     --clr-white: #f9fafb;
 
@@ -63,4 +63,23 @@ a {
 
 strong {
     color: var(--clr-red);
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+    .hidden {
+        transition: none;
+    }
 }

@@ -77,22 +77,22 @@
       <!-- ----introduction section---- -->
       <section class="michael">
         <div class="michael__words">
-          <h1 class="michael__title">Phan Duy Anh Mai</h1>
-          <p class="michael__description">
+          <h1 class="michael__title hidden">Phan Duy Anh Mai</h1>
+          <p class="michael__description hidden">
             Software Engineer, Web & App Developer
           </p>
-          <a class="michael__btn btn" href="#contact">Contact</a>
+          <a class="michael__btn btn hidden" href="#contact">Contact</a>
         </div>
       </section>
 
       <!-- ----about section---- -->
       <section id="about" class="about section">
         <div class="about__img">
-          <img class="about__img lazy loading" src="/michael.jpg" />
+          <img class="about__img hidden" src="/michael.jpg" />
         </div>
         <div class="about__words">
           <h2 class="about__title">About</h2>
-          <p class="about__description">
+          <p class="about__description hidden">
             Hi there, <br />
             <br />
             I am a Computer Science student at
@@ -105,14 +105,14 @@
             gymrat
           </p>
           <hr />
-          <div class="tab__titles">
+          <div class="tab__titles hidden">
             <p class="tab__links active-link" onclick="opentab('skills')">
               Skills
             </p>
             <p class="tab__links" onclick="opentab('education')">Education</p>
             <p class="tab__links" onclick="opentab('experience')">Experience</p>
           </div>
-          <div class="tab__contents active-tab" id="skills">
+          <div class="tab__contents active-tab hidden" id="skills">
             <p><strong>UI/UX</strong><br />Designing Web/App interfaces</p>
             <p><strong>Web Development</strong><br />Web App Development</p>
             <p>
@@ -138,7 +138,7 @@
         <h2 class="work__title">Projects</h2>
         <div class="work__list">
           <div class="work__portfolio">
-            <div class="work__content">
+            <div class="work__content hidden">
               <img src="/cafe-the-town-2.jpg" alt="cafe-website" />
               <div class="work__layer">
                 <h3>Cafe The Town Website</h3>
@@ -148,7 +148,7 @@
                 </p>
               </div>
             </div>
-            <div class="work__content">
+            <div class="work__content hidden">
               <img src="/rock-paper-scissor.jpg" alt="rock-paper-scissor" />
               <div class="work__layer">
                 <h3>Rock Paper Scissor Game</h3>
@@ -159,7 +159,7 @@
               </div>
             </div>
           </div>
-          <a class="work__btn btn" href="https://github.com/mpduyanh"
+          <a class="work__btn btn hidden" href="https://github.com/mpduyanh"
             >Discover More</a
           >
         </div>
@@ -198,6 +198,7 @@
       <h3 class="footer__title">--Phan Duy Anh Mai--</h3>
     </footer>
     <script type="module" src="src/main.js"></script>
+    <script src="src/app.js"></script>
     <script>
       var tablinks = document.getElementsByClassName("tab__links");
       var tabcontents = document.getElementsByClassName("tab__contents");
