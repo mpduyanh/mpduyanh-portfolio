@@ -1,17 +1,21 @@
 .contact{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    gap: 3rem;
+    padding-bottom: 5rem;
 }
 
 .contact__title{
     font-size: 1.96rem;
     text-transform: uppercase;
     letter-spacing: -0.05em;
+    color: var(--clr-white);
 }
 
 .contact__description{
-    font-size: var(--size-xl);
+    font-size: var(--size-lg);
 }
 
 .contact__socials{
@@ -25,7 +29,7 @@
 }
 
 .contact__links img{
-    width: var(--size-5xl);
+    width: var(--size-3xl);
 }
 .contact__links:hover {
     transform: translateY(-0.4rem);
@@ -48,6 +52,10 @@
 
     .contact__description{
         font-size: var(--size-2xl);
+    }
+
+    .contact__links img{
+        width: var(--size-4xl);
     }
 }
 

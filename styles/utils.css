@@ -35,11 +35,11 @@
     margin-right: auto;
     padding-left: var(--size-xxs);
     padding-right: var(--size-xxs);
-    /* border: 1px red solid; */
+    border: 1px red solid;
 }
 
 .section{
-    margin-top: 5rem;
+    padding-top: 3rem;
 }
 
 /* xs */
@@ -70,7 +70,7 @@
     }
 
     .section{
-        margin-top: 10rem;
+        padding-top: 5rem;
     }
 }
 

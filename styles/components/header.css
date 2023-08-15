@@ -3,15 +3,22 @@
   padding-bottom: 2rem;
   position: relative;
   z-index: 9999;
+  background-color: var(--clr-slate950);
 }
 
 .header__nav{
     display: flex;
     justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .header__logo{
-    /* border: 1px solid red; */
     font-size: var(--size-6xl) ;
+    color: var(--clr-white);
+}
+
+.header__logo span{
+  color: var(--clr-red);
 }
 .header__menu {
   display: none;

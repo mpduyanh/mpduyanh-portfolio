@@ -3,12 +3,14 @@
     flex-direction: column-reverse;
     align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 15rem;
 }
 
 .about__img{
     border-radius: 5%;
-    width: 20rem;
+    width: 18rem;
 }
 
 .about__words{
@@ -18,13 +20,14 @@
 }
 
 .about__title{
-    font-size: 1.96rem;
+    font-size: var(--size-3xl);
     text-transform: uppercase;
     letter-spacing: -0.05em;
+    color: var(--clr-white);
 }
 
 .about__description{
-    font-size: var(--size-xl);
+    font-size: var(--size-lg);
 }
 
 .tab__titles{
@@ -37,6 +40,8 @@
     letter-spacing: -0.05em;
     cursor: pointer;
     position: relative;
+    color: var(--clr-white);
+    font-size: var(--size-sm);
 }
 
 .tab__links.active-link{
@@ -54,6 +59,7 @@
 
 .tab__contents.active-tab{
     display: block;
+    font-size: var(--size-lg);
 }
 /* xs */
 /* @media (min-width: 475px) {} */
@@ -65,15 +71,12 @@
 @media (min-width: 768px) {
     .about{
         flex-direction: row;
+        justify-content: center;
         align-items: flex-start;
     }
 
     .about__img{
-        width: 100rem;
-    }
-
-    .tab__titles{
-        font-size: var(--size-lg);
+        width: 70rem;
     }
 }
 
@@ -87,12 +90,12 @@
         font-size: var(--size-2xl);
     }
 
-    .tab__titles{
-        font-size: var(--size-xl);
+    .tab__links{
+        font-size: var(--size-lg);
     }
 
     .tab__contents{
-        font-size: var(--size-lg);
+        font-size: var(--size-2xl);
     }
 }
 
